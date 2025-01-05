@@ -17,6 +17,7 @@ body{
     color: black;
     z-index: 10;
     display: flex;
+    gap: 35vw;
 }
 #accueil{
     height: 100px;
@@ -24,8 +25,9 @@ body{
 #titre{
     color: black;
     font-size: 272%;
-    margin-left: 500;
-    white-space: nowrap;
+    /*margin-left: 500;*/
+    /*white-space: nowrap;*/
+    text-align: center;
 }
 #annonce{
     text-align: center;
