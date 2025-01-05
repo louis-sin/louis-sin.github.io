@@ -1,0 +1,175 @@
+body{
+    background-image: url(camouflage.JPG);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200%;
+    margin-top: 150px;
+}
+#accueil{
+    height: 100px;
+}
+#titre{
+    color: black;
+    font-size: 218%;
+    margin-left: 135;
+    white-space: nowrap;
+}
+.bandeau{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #517a2f;
+    color: black;
+    z-index: 10;
+    display: flex;
+    gap: 50px;
+}
+#contact{
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 100;
+}
+#video{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#lien{
+    display: flex;
+}
+
+#rpima{
+    height: 200px;
+    width: 300px;
+    margin-left: 85;
+    border: 18px solid #405240;
+    transition: transform 0.4s ease;
+    overflow: hidden;
+    margin-top: 100px;
+}
+#rpima:hover{
+    transform: scale(1.1);
+}
+#containerrpima{
+    width: 100%;
+    max-width: 300px; /* Vous pouvez ajuster la largeur selon votre besoin */
+    margin-left: 18px; /* Centrer le conteneur */
+}
+#texterpima{
+    background-color: #405240; /* Fond coloré */
+    color: white; /* Couleur du texte */
+    padding: 10px; /* Espaces autour du texte */
+    font-size: 36px; /* Taille du texte */
+    width: 316px; /* Largeur spécifique du fond */
+    height: 100px; /* Hauteur spécifique du fond */
+    text-align: center; /* Centrer le texte */
+    line-height: 100px; /* Centrer verticalement le texte dans le fond */
+    margin-left: 85;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#texterpima:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+
+#rdp{
+    height: 200px;
+    width: 300px;
+    margin-left: 85;
+    border: 18px solid #405240;
+    transition: transform 0.4s ease;
+    overflow: hidden;
+    margin-top: 100px;
+}
+#rdp:hover{
+    transform: scale(1.1);
+}
+#containerrdp{
+    width: 100%;
+    max-width: 300px; /* Vous pouvez ajuster la largeur selon votre besoin */
+    margin-left: 100px; /* Centrer le conteneur */
+}
+#texterdp{
+    background-color: #405240; /* Fond coloré */
+    color: white; /* Couleur du texte */
+    padding: 10px; /* Espaces autour du texte */
+    font-size: 36px; /* Taille du texte */
+    width: 316px; /* Largeur spécifique du fond */
+    height: 100px; /* Hauteur spécifique du fond */
+    text-align: center; /* Centrer le texte */
+    line-height: 100px; /* Centrer verticalement le texte dans le fond */
+    margin-left: 85;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#texterdp:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+#rhfs{
+    height: 200px;
+    width: 300px;
+    margin-left: 85;
+    border: 18px solid #405240;
+    transition: transform 0.4s ease;
+    overflow: hidden;
+    margin-top: 100px;
+}
+#rhfs:hover{
+    transform: scale(1.1);
+}
+#containerrhfs{
+    width: 100%;
+    max-width: 300px; /* Vous pouvez ajuster la largeur selon votre besoin */
+    margin-left: 100px; /* Centrer le conteneur */
+}
+#texterhfs{
+    background-color: #405240; /* Fond coloré */
+    color: white; /* Couleur du texte */
+    padding: 10px; /* Espaces autour du texte */
+    font-size: 36px; /* Taille du texte */
+    width: 316px; /* Largeur spécifique du fond */
+    height: 100px; /* Hauteur spécifique du fond */
+    text-align: center; /* Centrer le texte */
+    line-height: 100px; /* Centrer verticalement le texte dans le fond */
+    margin-left: 85;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#texterhfs:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+
+table{
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 4px solid black;
+    border-collapse: collapse;
+    width: 700px;
+}
+caption{
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+th{
+    border: 2px solid black;
+    text-align: center;
+}
+td{
+    border: 2px solid black;
+    text-align: center;
+}
+
+#space{
+    height: 72px;
+}
