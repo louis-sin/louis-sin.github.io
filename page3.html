@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>page3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="style3.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="bandeau">
+            <a href="page1.html"><img src="accueill.png" alt="accueil" id="accueil"></a>
+            <h1 id="titre">
+                Le 13e Régiment de Dragons Parachutistes
+            </h1>
+            <img src="rdplogo.png" alt="logo" id="logo">
+        </div>
+        <div id="center">
+            <div class="scroll-menu">
+                <div class="images">
+                    <img src="rdp1.jpg" alt="Image 1">
+                    <img src="rdp2.jpg" alt="Image 2">
+                    <img src="rdp3.jpg" alt="Image 3">
+                    <img src="rdp4.jpg" alt="Image 4">
+                </div>
+                <div class="buttons">
+                    <button onclick="scrollLef()">&lt;</button>
+                    <button onclick="scrollRight()">&gt;</button>
+                </div>
+            </div>
+            
+            <script>
+                const imagesContainer = document.querySelector('.scroll-menu .images');
+                const totalImages = document.querySelectorAll('.scroll-menu .images img').length;
+                let currentIndex = 0;
+            
+                function scrollLef() {
+                    currentIndex--;
+                    if (currentIndex < 0) {
+                        currentIndex = totalImages-1;
+                    }
+                    updateScrollPosition();
+                }
+                function scrollLeft() {
+                    currentIndex--;
+                    if (currentIndex < 0) {
+                        currentIndex = totalImages-1;
+                    }
+                    updateScrollPosition();
+                }
+                function scrollRight() {
+                    currentIndex++;
+                    if (currentIndex >= totalImages) {
+                        currentIndex = 0;
+                    }
+                    updateScrollPosition();
+                }
+            
+                function updateScrollPosition() {
+                    const imageWidth = imagesContainer.querySelector('img').offsetWidth;
+                    imagesContainer.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+                }
+            </script>
+        </div>
+        <div>
+            <p style="margin: auto; width: 80%; font-size: 22px;">
+                Le 13e RDP signifiant 13e Régiment de Dragons Parachutistes est un régiment des forces spéciales françaises, il est spécialisé dans le renseignement et est reconnu comme étant l'un des meilleur d'europe dans ce dommaine.<br>Ce régiment composé de 900 soldats créé en 1676 est basé à Martignas sur Jalle à l'ouest de Bordeaux. Ces soldats d'exception sont capables de surveiller une cible pendant des jours sans être repérés en étant cachés dans le sol dans des caches creusés au début de leur mission. Ce qui fait que chacun de ces soldats porte continuellement un sac à dos d'environ 70/80 kg<br>
+                Les militaires de ce régiment effectuent leurs missions par petits groupes étant le plus souvent composés de 6 personnels. Ces soldats sont tous formés au métier du renseignement et tous capablent d'effectuer la mission. Cependant dans chaque équipe, chaque personnel à une spécialisation défini (voir tableau ci-dessous) ce qui rend les escouades totalement autonome dans leur missions.
+            </p>
+            <p style="margin-top: 50px; font-size: 36px; text-align: center;">
+                Sa devise:
+            </p>
+            <p style="font-size: 50px; text-decoration: underline; text-align: center; ">
+                <b>AU-DELÀ DU POSSIBLE</b>
+            </p>
+        </div>
+        <table style="border: 2px solid black; border-collapse: collapse; margin: auto; width: 90%; margin-top: 100px; font-size: 17px;">
+            <caption style="font-size: 36px; text-decoration: underline; margin-bottom: 10px;"">Personnel et Rôle d'une équipe</caption>
+            <tr>
+                <th>Personnel</th>
+                <th>Rôle</th>
+                <th>Compétences</th>
+            </tr>
+            <tr>
+                <td>Le Chef de groupe</td>
+                <td>- Veille à la réussite de la mission<br>- Prend les décisions sur le terrain<br>- Fait la liaison avec les autres unités</td>
+                <td>- Sous officier ou officier (capable de commander des hommes)</td>
+            </tr>
+            <tr>
+                <td>Le Tireur</td>
+                <td>- Responsable de l'armement<br>- Utilisateur matériel de surveillance optique</td>
+                <td>- Tir de présision<br>- Utilisation d'armement lourds ou légers</td>
+            </tr>
+            <tr>
+                <td>Le Conducteur</td>
+                <td>- Responsable de la conduite et de la sécutité du véhicule blindé léger<br>- Responsable d'autres véhicules légers</td>
+                <td>- Techniques de conduite dans des environnement variés</td>
+            </tr>
+            <tr>
+                <td>Le Renseignement</td>
+                <td>- Chargé de la collecte et de l'analyse des informations<br>- Utilisateur des équipement de communication et de surveillance<br>- Gère le matériel pour la communication avec le commandement et les autres unités</td>
+                <td>- Utilisation de systèmes de renseignement et de communication<br>- Utilisation d'outils de surveillance</td>
+            </tr>
+            <tr>
+                <td>Le Fantassin de combat</td>
+                <td>- Principal acteur des missions terrestres de combat<br>- Capable de se déployer dans des conditions difficiles</td>
+                <td>- Technique de combat et d'infiltration<br>- Utilisation d'armement légers</td>
+            </tr>
+            <tr>
+                <td>Le Spécialiste médical</td>
+                <td>- Responsable des soins médicaux<br>- Doit être capable de soigner des blessures graves et de stabiliser le bléssé</td>
+                <td>- Secours au combat (sur le terrain)<br>- Gestion des urgences médicales</td>
+            </tr>
+        </table>
+
+        <div style="margin-top: 100px;">
+            <h1 style="text-align: center; text-decoration: underline; font-size: 50px;">Les Principaux Équipements</h1>
+            <div style="display: flex;">
+                <h2 style="margin-left: 160px; font-size: 36px;">L'Arme</h2>
+                <h2 style="margin-left: 290px; font-size: 36px;">Le Véhicule</h2>
+                <h2 style="margin-left: 272px; font-size: 36px;">Le Drone</h2>
+            </div>
+            <div style="margin-top: 18px; display: flex;">
+                <div id="hk416">
+                    HK416 FS
+                </div>
+                <div id="vps">
+                    Véhicule<br>Patrouille<br>Spéciale
+                </div>
+                <div id="blackhornet">
+                    <!--<div style="margin-top: 118px;">-->
+                        Black<br>Hornet
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+
+        <div id="video">
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/oB629Gb79kg?si=7huLASeWuzXsVYaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="space"></div>
+    </body>
+</html>

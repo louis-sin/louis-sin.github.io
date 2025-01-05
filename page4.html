@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <title>page4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="style4.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="bandeau">
+            <a href="page1.html"><img src="accueill.png" alt="accueil" id="accueil"></a>
+            <h1 id="titre">
+                Le 4e Régiment d'Hélicoptères des Forces Spéciales
+            </h1>
+            <img src="rhfslogo.png" alt="logo" id="logo">
+        </div>
+        <div id="center">
+            <div class="scroll-menu">
+                <div class="images">
+                    <img src="rhfs1.jpg" alt="Image 1">
+                    <img src="rhfs2.jpg" alt="Image 2">
+                    <img src="rhfs3.jpeg" alt="Image 3">
+                    <img src="rhfs4.jpg" alt="Image 4">
+                </div>
+                <div class="buttons">
+                    <button onclick="scrollLef()">&lt;</button>
+                    <button onclick="scrollRight()">&gt;</button>
+                </div>
+            </div>
+            
+            <script>
+                const imagesContainer = document.querySelector('.scroll-menu .images');
+                const totalImages = document.querySelectorAll('.scroll-menu .images img').length;
+                let currentIndex = 0;
+            
+                function scrollLef() {
+                    currentIndex--;
+                    if (currentIndex < 0) {
+                        currentIndex = totalImages-1;
+                    }
+                    updateScrollPosition();
+                }
+                function scrollLeft() {
+                    currentIndex--;
+                    if (currentIndex < 0) {
+                        currentIndex = totalImages-1;
+                    }
+                    updateScrollPosition();
+                }
+                function scrollRight() {
+                    currentIndex++;
+                    if (currentIndex >= totalImages) {
+                        currentIndex = 0;
+                    }
+                    updateScrollPosition();
+                }
+            
+                function updateScrollPosition() {
+                    const imageWidth = imagesContainer.querySelector('img').offsetWidth;
+                    imagesContainer.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+                }
+            </script>
+        </div>
+
+        <div>
+            <p style="margin: auto; width: 80%; font-size: 22px;">
+                Le 4e RHFS de son nom entier 4e Régiment d'Hélicoptères des Forces spéciales est l'un des trois régiment d'élite de l'armée de terre.
+                Il appartient à l'Aviation Légère de l'Armée de Terre (l'ALAT).<br>Fondé en 1997 et basé à Pau, ce Régiment est aujourd'hui très utile dans les actions spéciales de l'armée de terre comme les transports et l'appui des troupes ou encore faisant des missions de reconaissances.<br>
+                Ce régiment comporte 500 hommes et femmes répartient en 7 domaines d'activités comportant chacun plusieurs spécialités. Il coporte aussi de nombreux véhicules.
+            </p>
+            <p style="margin-top: 50px; font-size: 36px; text-align: center;">
+                Sa devise:
+            </p>
+            <p style="font-size: 50px; text-decoration: underline; text-align: center; ">
+                <b>NULLE PART SANS NOUS</b>
+            </p>
+        </div>
+        <table style="width: 90%; border: 2px solid black; border-collapse: collapse; margin: auto; margin-top: 50px;">
+            <caption style="font-size: 36px; text-decoration: underline; margin-bottom: 10px;">Domaines et spécialités</caption>
+            <tr style="border: 2px solid black; border-collapse: collapse; ">
+                <th>Aérocombat</th>
+                <th>Maintenance</th>
+                <th>Logistique & Transport</th>
+                <th>Informatique & Télécoms</th>
+                <th>Administration & Service</th>
+                <th>Renseignement</th>
+                <th>Forces Spéciales</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li id="numero">Mécanitien aéronautique</li>
+                        <li id="numero">Contrôleur aérien</li>
+                        <li id="numero">Préparateur de mission</li>
+                        <li id="numero">Technicien maintenance aéronautique</li>
+                        <li id="numero">Météorologue</li>
+                        <li id="numero">Officier pilote d'hélicoptère</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li id="numero">Réparateur parachutes</li>
+                        <li id="numero">Plieur parachutes</li>
+                        <li id="numero">Chef de groupe mécanicien armement</li>
+                        <li id="numero">Chef de groupe mécanicien véhicule</li>
+                        <li id="numero">Chef de groupe maintenance des systèmes électroniques embarqués</li>
+                        <li id="numero">Chef de groupe maintenance parachutes</li>
+                        <li id="numero">Chef de groupe maintenance thermique</li>
+                        <li id="numero">Chef de groupe magasinier munitions</li>
+                        <li id="numero">Chef de groupe magasinier maintenance</li>
+                        <li id="numero">Chef de groupe maintenance instruments électromagnétiques</li>
+                        <li id="numero">Dépanneur instruments électromagnétiques</li>
+                        <li id="numero">Magasinier munitions</li>
+                        <li id="numero">Magasinier maintenance</li>
+                        <li id="numero">Technicien maintenance thermique</li>
+                        <li id="numero">Mécanicien véhicule</li>
+                        <li id="numero">Mécanicien armement de petit calibre</li>
+                        <li id="numero">Technicien matériels défense nucléaire, biologique et chimique</li>
+                        <li id="numero">Technicien en optronique et électrotechnique</li>
+                        <li id="numero">Officier sous contrat d'encadrement maintenance</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li id="numero">Opérateur de la livraison par air</li>
+                        <li id="numero">Chef de groupe soutien pétrolier</li>
+                        <li id="numero">Chef de groupe approvisionneur</li>
+                        <li id="numero">Chef de patrouille</li>
+                        <li id="numero">Chef de groupe livraison par air</li>
+                        <li id="numero">Chef d'escouade</li>
+                        <li id="numero">Moniteur de conduite</li>
+                        <li id="numero">Chef de groupe chargement portuaire</li>
+                        <li id="numero">Chef de groupe approvisionnement</li>
+                        <li id="numero">Chef de groupe maintenance des matériels pétroliers</li>
+                        <li id="numero">Opérateur conducteur pétrolier</li>
+                        <li id="numero">Opérateur de l'approvisionnement</li>
+                        <li id="numero">Opérateur du chargement portuaire</li>
+                        <li id="numero">Mécanicien</li>
+                        <li id="numero">Combattant du transport routier</li>
+                        <li id="numero">Combattantspécialiste de l'escorte</li>
+                        <li id="numero">Officier d'encadrement logistique & tranports</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li id="numero">Spécialiste cybersécurité</li>
+                        <li id="numero">Développeur informatique</li>
+                        <li id="numero">Spécialiste réseaux informatiques</li>
+                        <li id="numero">Spécialiste système d'information</li>
+                        <li id="numero">Chef de groupe télécoms</li>
+                        <li id="numero">Spécialiste expert télécoms</li>
+                        <li id="numero">Spécialiste expert systèmes d'information</li>
+                        <li id="numero">Spécialiste expert cybersécurité</li>
+                        <li id="numero">Technicien télécoms</li>
+                        <li id="numero">Officier sous contrat d'encadrement informatique & télécoms</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li id="numero">Assistant ressources humaines</li>
+                        <li id="numero">Assistant contrôleur de gestion, financier ou comptable</li>
+                        <li id="numero">Secrétaire assistant</li>
+                        <li id="numero">Spécialiste communication</li>
+                        <li id="numero">Spécialiste finances & pilotage de la performance</li>
+                        <li id="numero">Spécialiste ressources humaines</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li id="numero">Spécialiste langues étrangères</li>
+                        <li id="numero">Analyste-exploitant renseignement</li>
+                        <li id="numero">Analyste images</li>
+                        <li id="numero">Télépilote de frones</li>
+                        <li id="numero">Spécialiste traitement des signaux</li>
+                        <li id="numero">Chef de groupe éclaireur</li>
+                        <li id="numero">Chef de groupe géographe</li>
+                        <li id="numero">Analyste d'écoute</li>
+                        <li id="numero">Spécialiste interception des signaux</li>
+                        <li id="numero">Spécialiste gueurre électronique</li>
+                        <li id="numero">Spécialiste exploitation du renseignement</li>
+                        <li id="numero">Spécialiste expert géographe</li>
+                        <li id="numero">Spécialiste expert imagerie</li>
+                        <li id="numero">Géographe</li>
+                        <li id="numero">Technicien drones</li>
+                        <li id="numero">Éclaireur</li>
+                        <li id="numero">Officier sous contrat d'encadrement renseignement</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li id="numero">Chef de groupe forces spéciales</li>
+                        <li id="numero">Combattant des forces spéciales</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <h1 style="text-align: center; margin-top: 136px; font-size: 36px;">Les véhicules</h1>
+        </div>
+        <div style="margin-top: 36px; display: flex;">
+            <div id="cougar">
+                AS532<br>Cougar
+            </div>
+            <div id="caracal">
+                M225M<br>Caracal
+            </div>
+            <div id="puma">
+                SA330<br>Puma
+            </div>
+        </div>
+        <div style="margin-top: 50px; display: flex;">
+            <div id="gazelle">
+                SA342<br>Gazelle
+            </div>
+            <div id="tigre">
+                SA330<br>Tigre
+            </div>
+            <div id="niokolo">
+                VLRA<br>Niokolo
+            </div>
+        </div>
+
+        <div id="video">
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/1LUavHS16MI?si=sB0Td1ZSBb_b2fo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="space"></div>
+    </body>
+</html>

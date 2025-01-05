@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>page2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="style2.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="bandeau">
+            <a href="page1.html"><img src="accueill.png" alt="accueil" id="accueil"></a>
+            <h1 id="titre">
+                Le 1er Régiment de Parachutistes d'Infanterie de Marine
+            </h1>
+            <img src="rpimalogo.png" alt="logo" id="logo">
+        </div>
+        <div id="center">
+            <div class="scroll-menu">
+                <div class="images">
+                    <img src="rpima1.jpg" alt="Image 1">
+                    <img src="rpima2.jpg" alt="Image 2">
+                    <img src="rpima3.jpg" alt="Image 3">
+                    <img src="rpima4.jpg" alt="Image 4">
+                </div>
+                <div class="buttons">
+                    <button onclick="scrollLef()">&lt;</button>
+                    <button onclick="scrollRight()">&gt;</button>
+                </div>
+            </div>
+            
+            <script>
+                const imagesContainer = document.querySelector('.scroll-menu .images');
+                const totalImages = document.querySelectorAll('.scroll-menu .images img').length;
+                let currentIndex = 0;
+            
+                function scrollLef() {
+                    currentIndex--;
+                    if (currentIndex < 0) {
+                        currentIndex = totalImages-1;
+                    }
+                    updateScrollPosition();
+                }
+                function scrollLeft() {
+                    currentIndex--;
+                    if (currentIndex < 0) {
+                        currentIndex = totalImages-1;
+                    }
+                    updateScrollPosition();
+                }
+                function scrollRight() {
+                    currentIndex++;
+                    if (currentIndex >= totalImages) {
+                        currentIndex = 0;
+                    }
+                    updateScrollPosition();
+                }
+            
+                function updateScrollPosition() {
+                    const imageWidth = imagesContainer.querySelector('img').offsetWidth;
+                    imagesContainer.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+                }
+            </script>
+        </div>
+        <div style="margin-top: 100px;">
+            <p>
+                Le 1er Régiment de Parachutistes d'Infanterie de Marine aussi appellé 1er RPIMa est un régiment de forces spéciales créé en 1960 et stationné à Bayonne depuis cette date. Ce régiment composé de 905 fantassin est aujourd'hui considéré comme le meilleures de l'armée de terre et reconnu dans le monde entier pour son savoir faire.<br>
+                De nos jours, ces principales missions sont la libération d'otages, le contre-terrorisme, la capture de cible important ou encore la destruction de cibles stratégiques.
+            </p>
+        </div>
+        <div style="display: flex;">
+            <div>
+                <h1>L'Équipement principal du régiment</h1>
+                <ul style="font-size: 18px;">
+                    <li>Les Armes</li>
+                        <ul>
+                            <li>Les fusils d'assault</li>
+                                <ul>
+                                    <li>Fusil pour TE type 408 CHEYTAC</li>
+                                    <li>HK416 FS</li>
+                                </ul>
+                            <li>Les pistolet</li>
+                                <ul>
+                                    <li>PA Glock 17</li>
+                                </ul>
+                            <li>Les Missiles</li>
+                                <ul>Missiles moyenne portée</ul>
+                        </ul>
+                    <li>Les Véhicules de combat</li>
+                        <ul>
+                            <li>Land-Rover Discovery blindés</li>
+                            <li>Véhicule Patrouille Spéciales</li>
+                            <li>Quad Polaris MV850</li>
+                        </ul>
+                    <li> Autre Équipements</li>
+                        <ul>
+                            <li>Parachutes</li>
+                                <ul>
+                                    <li>G9</li>
+                                    <li>BT80</li>
+                                </ul>
+                            <li>Jumelles</li>
+                                <ul>
+                                    <li>Bonnie</li>
+                                    <li>Litton</li>
+                                </ul>
+                        </ul>
+                </ul>
+            </div>
+            <table style="margin-left: 300px; font-size: 18px; margin-top: 20px; border-collapse: collapse; text-align: center;">
+                <tr>
+                    <th>Matériel</th>
+                    <th>Nombre d'unité</th>
+                </tr>
+                <tr>
+                    <td>HK416 FS</td>
+                    <td>905</td>
+                </tr>
+                <tr>
+                    <td>PA Glock 17</td>
+                    <td>905</td>
+                </tr>
+                <tr>
+                    <td>Véhicule Patrouille Spéciales</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Jumelles Bonnie</td>
+                    <td>905</td>
+                </tr>
+                <tr>
+                    <td>Jumelles Litton</td>
+                    <td>905</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1 style="font-size: 50px; text-align: center; text-decoration: underline; margin-top: 100px;">Les Armes</h1>
+            <div style="display: flex;">
+                <div id="hk416">
+                    HK416 FS
+                </div>
+                <div id="glock">
+                    Glock 17
+                </div>
+            </div>
+            <h1 style="font-size: 50px; text-align: center; text-decoration: underline; margin-top: 50px;">Les Véhicules</h1>
+            <div style="display: flex;">
+                <div id="vps">
+                    Véhicule<br>Patrouille<br>Spéciale
+                </div>
+                <div id="quad">
+                    Polaris<br>MV850
+                </div>
+            </div>
+        </div>
+
+        <div id="video">
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/YD_reNJGCHY?si=EE6imab64h4Gvffi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="space"></div>
+    </body>
+</html>
