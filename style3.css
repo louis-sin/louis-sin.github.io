@@ -86,13 +86,16 @@ body{
 #titre{
     color: black;
     font-size: 250%;
-    margin-left: 200;
+    margin-left: 15vw;
     white-space: nowrap;
+    
 }
 
 #logo{
     height: 100px;
-    margin-left: 200;
+    margin-left: 15vw;
+    object-fit: cover;
+
 }
 
 #video{
@@ -111,7 +114,8 @@ td{
 
 #hk416{
     background-image: url(hk416.jpg); /* Fond coloré */
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black; /* Couleur du texte */
     padding: 10px; /* Espaces autour du texte */
     font-size: 36px; /* Taille du texte */
@@ -124,7 +128,8 @@ td{
 }
 #vps{
     background-image: url(vps.jpg); /* Fond coloré */
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black; /* Couleur du texte */
     padding: 10px; /* Espaces autour du texte */
     font-size: 36px; /* Taille du texte */
@@ -137,7 +142,8 @@ td{
 }
 #blackhornet{
     background-image: url(blackhornet.jpg); /* Fond coloré */
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black; /* Couleur du texte */
     padding: 10px; /* Espaces autour du texte */
     font-size: 36px; /* Taille du texte */
