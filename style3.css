@@ -17,6 +17,7 @@ body{
     color: black;
     z-index: 10;
     display: flex;
+    justify-content: space-between;
 }
 #accueil{
     height: 100px;
@@ -40,7 +41,6 @@ body{
      justify-content: center;
     align-items: center;
     height: 100vh;
-    /*background-color: #f0f0f0;*/
 }
 
 .scroll-menu .images {
@@ -86,14 +86,14 @@ body{
 #titre{
     color: black;
     font-size: 250%;
-    margin-left: 15vw;
+    /*margin-left: 5vw;*/
     white-space: nowrap;
     
 }
 
 #logo{
     height: 100px;
-    margin-left: 15vw;
+    /*margin-left: 5vw;*/
     object-fit: cover;
 
 }
