@@ -13,9 +13,12 @@ body{
 }
 #titre{
     color: black;
-    font-size: clamp(20px, 60px);
+    font-size: 3vw;
     /*margin-left: 135;*/
     white-space: nowrap;
+}
+#page{
+    margin-right: 3vw;
 }
 .bandeau{
     position: fixed;
@@ -41,8 +44,9 @@ body{
 }
 
 #video{
-    text-align: center;
+    margin: auto;
     margin-top: 100px;
+    max-width: 54vw;
 }
 
 #lien{
