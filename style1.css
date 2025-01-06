@@ -6,14 +6,15 @@ body{
     background-position: center;
     height: 200%;
     margin-top: 150px;
+    max-width: 100%;
 }
 #accueil{
     height: 100px;
 }
 #titre{
     color: black;
-    font-size: 218%;
-    margin-left: 135;
+    font-size: clamp(20px, 60px);
+    /*margin-left: 135;*/
     white-space: nowrap;
 }
 .bandeau{
@@ -26,13 +27,19 @@ body{
     color: black;
     z-index: 10;
     display: flex;
-    gap: 50px;
+    /*gap: 50px;*/
+    justify-content: space-between;
 }
 #contact{
     color: #ffffff;
     text-decoration: none;
-    margin-left: 100;
+    margin-right: 36px;
 }
+#contact:hover{
+    color: black;
+    text-decoration: underline;
+}
+
 #video{
     text-align: center;
     margin-top: 100px;
@@ -40,12 +47,15 @@ body{
 
 #lien{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
 }
 
 #rpima{
     height: 200px;
     width: 300px;
-    margin-left: 85;
+    /*margin-left: 85;*/
     border: 18px solid #405240;
     transition: transform 0.4s ease;
     overflow: hidden;
@@ -57,7 +67,7 @@ body{
 #containerrpima{
     width: 100%;
     max-width: 300px; /* Vous pouvez ajuster la largeur selon votre besoin */
-    margin-left: 18px; /* Centrer le conteneur */
+    margin-left: 5vw; /* Centrer le conteneur */
 }
 #texterpima{
     background-color: #405240; /* Fond coloré */
@@ -68,7 +78,7 @@ body{
     height: 100px; /* Hauteur spécifique du fond */
     text-align: center; /* Centrer le texte */
     line-height: 100px; /* Centrer verticalement le texte dans le fond */
-    margin-left: 85;
+    /*margin-left: 85;*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #texterpima:hover{
@@ -80,7 +90,7 @@ body{
 #rdp{
     height: 200px;
     width: 300px;
-    margin-left: 85;
+    /*margin-left: 85;*/
     border: 18px solid #405240;
     transition: transform 0.4s ease;
     overflow: hidden;
@@ -92,7 +102,7 @@ body{
 #containerrdp{
     width: 100%;
     max-width: 300px; /* Vous pouvez ajuster la largeur selon votre besoin */
-    margin-left: 100px; /* Centrer le conteneur */
+    margin-right: 1vw; /* Centrer le conteneur */
 }
 #texterdp{
     background-color: #405240; /* Fond coloré */
@@ -103,7 +113,7 @@ body{
     height: 100px; /* Hauteur spécifique du fond */
     text-align: center; /* Centrer le texte */
     line-height: 100px; /* Centrer verticalement le texte dans le fond */
-    margin-left: 85;
+    /*margin-left: 85;*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #texterdp:hover{
@@ -116,7 +126,7 @@ body{
 #rhfs{
     height: 200px;
     width: 300px;
-    margin-left: 85;
+    /*margin-left: 85;*/
     border: 18px solid #405240;
     transition: transform 0.4s ease;
     overflow: hidden;
@@ -128,7 +138,7 @@ body{
 #containerrhfs{
     width: 100%;
     max-width: 300px; /* Vous pouvez ajuster la largeur selon votre besoin */
-    margin-left: 100px; /* Centrer le conteneur */
+    margin-right: 7vw; /* Centrer le conteneur */
 }
 #texterhfs{
     background-color: #405240; /* Fond coloré */
@@ -139,7 +149,7 @@ body{
     height: 100px; /* Hauteur spécifique du fond */
     text-align: center; /* Centrer le texte */
     line-height: 100px; /* Centrer verticalement le texte dans le fond */
-    margin-left: 85;
+    /*margin-left: 85;*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #texterhfs:hover{
