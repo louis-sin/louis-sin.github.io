@@ -26,11 +26,12 @@ body{
 .scroll-menu {
     position: relative;
     width: 80%;
-    max-width: 604px;
+    max-width: 45vw;
     overflow: hidden;
     border: 2px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
 }
 
 #center{
@@ -95,12 +96,14 @@ body{
     height: 100px;
     /*margin-left: 5vw;*/
     object-fit: cover;
+    margin-right: 3vw;
 
 }
 
 #video{
-    text-align: center;
+    margin: auto;
     margin-top: 100px;
+    max-width: 54vw;
 }
 
 th{
@@ -123,7 +126,7 @@ td{
     height: 216px; /* Hauteur spécifique du fond */
     text-align: left; /* Centrer le texte */
     line-height: 50px; /* Centrer verticalement le texte dans le fond */
-    margin-left: 30;
+    margin-left: 2vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #vps{
@@ -137,7 +140,7 @@ td{
     height: 216px; /* Hauteur spécifique du fond */
     text-align: left; /* Centrer le texte */
     line-height: 50px; /* Centrer verticalement le texte dans le fond */
-    margin-left: 30;
+    /*margin-left: 30;*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #blackhornet{
@@ -151,7 +154,7 @@ td{
     height: 216px; /* Hauteur spécifique du fond */
     text-align: left; /* Centrer le texte */
     line-height: 50px; /* Centrer verticalement le texte dans le fond */
-    margin-left: 30;
+    margin-right: 2vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #space{
