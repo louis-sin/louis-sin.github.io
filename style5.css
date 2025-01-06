@@ -49,3 +49,13 @@ body{
 #space{
     height: 72px;
 }
+
+#mail{
+    color: black;
+    text-decoration: none;
+}
+
+#mail:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
