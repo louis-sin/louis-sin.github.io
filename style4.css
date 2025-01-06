@@ -115,7 +115,8 @@ th{
 }
 #cougar{
     background-image: url(cougar.png); /* Fond coloré */
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black; /* Couleur du texte */
     padding: 10px; /* Espaces autour du texte */
     font-size: 36px; /* Taille du texte */
@@ -128,7 +129,8 @@ th{
 }
 #caracal{
     background-image: url(caracal.jpg); /* Fond coloré */
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black; /* Couleur du texte */
     padding: 10px; /* Espaces autour du texte */
     font-size: 36px; /* Taille du texte */
@@ -141,7 +143,8 @@ th{
 }
 #puma{
     background-image: url(puma.jpg); /* Fond coloré */
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black; /* Couleur du texte */
     padding: 10px; /* Espaces autour du texte */
     font-size: 36px; /* Taille du texte */
@@ -154,7 +157,8 @@ th{
 }
 #gazelle{
     background-image: url(gazelle.jpeg); /* Fond coloré */
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black; /* Couleur du texte */
     padding: 10px; /* Espaces autour du texte */
     font-size: 36px; /* Taille du texte */
@@ -167,7 +171,8 @@ th{
 }
 #tigre{
     background-image: url(tigre.jpg); /* Fond coloré */
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black; /* Couleur du texte */
     padding: 10px; /* Espaces autour du texte */
     font-size: 36px; /* Taille du texte */
@@ -180,7 +185,8 @@ th{
 }
 #niokolo{
     background-image: url(niokolo.jpg); /* Fond coloré */
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black; /* Couleur du texte */
     padding: 10px; /* Espaces autour du texte */
     font-size: 36px; /* Taille du texte */
