@@ -101,7 +101,7 @@ body{
 }
 
 #video{
-    margin-left: 20vw;
+    margin: auto;
     margin-top: 100px;
     max-width: 54vw;
 }
