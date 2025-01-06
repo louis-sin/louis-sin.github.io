@@ -17,6 +17,7 @@ body{
     color: black;
     z-index: 10;
     display: flex;
+    justify-content: space-between;
 }
 #accueil{
     height: 100px;
@@ -25,11 +26,12 @@ body{
 .scroll-menu {
     position: relative;
     width: 80%;
-    max-width: 604px;
+    max-width: 54vw;
     overflow: hidden;
     border: 2px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
 }
 
 #center{
@@ -86,18 +88,21 @@ body{
 #titre{
     color: black;
     font-size: 250%;
-    margin-left: 75;
+    /*margin-left: 75;*/
     white-space: nowrap;
 }
 
 #logo{
     height: 100px;
-    margin-left: 75;
+    /*margin-left: 75;*/
+    object-fit: cover;
+    margin-right: 3vw;
 }
 
 #video{
-    text-align: center;
+    margin: auto;
     margin-top: 100px;
+    max-width: 54vw;
 }
 th{
     border: 2px solid black;
@@ -119,7 +124,7 @@ td{
     height: 270px; /* Hauteur spécifique du fond */
     text-align: left; /* Centrer le texte */
     line-height: 50px; /* Centrer verticalement le texte dans le fond */
-    margin-left: 100px;
+    margin-left: 8vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #glock{
@@ -133,7 +138,7 @@ td{
     height: 270px; /* Hauteur spécifique du fond */
     text-align: left; /* Centrer le texte */
     line-height: 50px; /* Centrer verticalement le texte dans le fond */
-    margin-left: 100px;
+    margin-right: 8vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #vps{
@@ -147,7 +152,7 @@ td{
     height: 270px; /* Hauteur spécifique du fond */
     text-align: left; /* Centrer le texte */
     line-height: 50px; /* Centrer verticalement le texte dans le fond */
-    margin-left: 100px;
+    margin-left: 8vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #quad{
@@ -161,7 +166,7 @@ td{
     height: 270px; /* Hauteur spécifique du fond */
     text-align: left; /* Centrer le texte */
     line-height: 50px; /* Centrer verticalement le texte dans le fond */
-    margin-left: 100px;
+    margin-right: 8vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #space{
