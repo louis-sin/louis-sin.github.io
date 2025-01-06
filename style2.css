@@ -110,7 +110,8 @@ td{
 
 #hk416{
     background-image: url(hk416.jpg); /* Fond coloré */
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black; /* Couleur du texte */
     padding: 10px; /* Espaces autour du texte */
     font-size: 36px; /* Taille du texte */
@@ -123,7 +124,8 @@ td{
 }
 #glock{
     background-image: url(glock.png); /* Fond coloré */
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black; /* Couleur du texte */
     padding: 10px; /* Espaces autour du texte */
     font-size: 36px; /* Taille du texte */
@@ -136,7 +138,8 @@ td{
 }
 #vps{
     background-image: url(vps.jpg); /* Fond coloré */
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black; /* Couleur du texte */
     padding: 10px; /* Espaces autour du texte */
     font-size: 36px; /* Taille du texte */
@@ -149,7 +152,8 @@ td{
 }
 #quad{
     background-image: url(quad.jpg); /* Fond coloré */
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black; /* Couleur du texte */
     padding: 10px; /* Espaces autour du texte */
     font-size: 36px; /* Taille du texte */
